@@ -1,105 +1,135 @@
-# 💳 Credit Card Fraud Detection System using Machine Learning
+# 💳 Credit Card Fraud Detection using Machine Learning
 
-## 📌 Overview
-
-This project is a Machine Learning-based Credit Card Fraud Detection System developed using Python and Scikit-learn. The system predicts whether a credit card transaction is fraudulent by analyzing transaction features. A Streamlit web application is also developed for easy prediction through CSV upload.
+A Machine Learning project that detects fraudulent credit card transactions using multiple classification algorithms. The project compares different models and deploys the best-performing model through a Streamlit web application.
 
 ---
 
-## 🎯 Objectives
+## 📌 Features
 
-- Detect fraudulent credit card transactions.
-- Compare multiple Machine Learning models.
-- Evaluate model performance.
-- Deploy the best model using Streamlit.
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Multiple Machine Learning models
+  - Logistic Regression
+  - Decision Tree
+  - Random Forest
+- Model comparison
+- Model evaluation
+- Confusion Matrix
+- Streamlit web application
+- CSV upload for prediction
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- Scikit-learn
 - Matplotlib
 - Seaborn
-- Scikit-learn
-- Joblib
 - Streamlit
-
----
-
-## 📂 Project Structure
-
-```
-CreditCard-Fraud-Detection/
-│
-├── dataset/
-│   └── creditcard.csv
-│
-├── models/
-│   ├── model.pkl
-│   └── scaler.pkl
-│
-├── src/
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── eda.py
-│   ├── preprocessing.py
-│   ├── train_model.py
-│   └── evaluate.py
-│
-├── app.py
-├── main.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🤖 Models Used
-
-- Logistic Regression
-- Decision Tree
-- Random Forest (Best Model)
+- Joblib
 
 ---
 
 ## 📊 Model Performance
 
-| Metric | Value |
-|---------|--------|
+| Metric | Score |
+|--------|-------|
 | Accuracy | 99.96% |
 | Precision | 94.12% |
 | Recall | 81.63% |
 | F1 Score | 87.43% |
 
----
-
-## 🚀 Features
-
-- Data Loading
-- Exploratory Data Analysis
-- Data Preprocessing
-- Model Training
-- Model Evaluation
-- Streamlit Web Application
-- CSV Upload Prediction
-- Download Prediction Results
+Random Forest was selected as the final model.
 
 ---
 
-## ▶️ How to Run
+## 📁 Project Structure
 
-Install dependencies
+creditcard-fraud-detection/
+
+├── dataset/
+
+├── models/
+
+├── src/
+
+├── app.py
+
+├── main.py
+
+├── requirements.txt
+
+└── README.md
+
+---
+
+## 🚀 How to Run
+
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### Train the model
+
+```bash
+python main.py
+```
+
+### Launch the Streamlit app
 
 ```bash
 streamlit run app.py
 ```
 
 ---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+
+![Home](images/homepage.png)
+
+---
+
+### 📂 Dataset Preview
+
+![Dataset Preview](images/datasetpreview.png)
+
+---
+
+### 📊 Prediction Results
+
+![Prediction](images/prediction.png)
+
+---
+
+### 🎯 Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+---
+
+### 📈 Class Distribution
+
+![Class Distribution](images/class_distribution.png)
+
+---
+
+### 💰 Transaction Amount Distribution
+
+![Transaction Amount Distribution](images/transaction-amount-distribution.png)
+
+---
+
+### 🔥 Correlation Heatmap
+
+![Correlation Heatmap](images/correlation-heatmap.png)
+
+## 👩‍💻 Developer
+
+Lina
